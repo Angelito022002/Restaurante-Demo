@@ -97,9 +97,9 @@ export default function Home() {
           Dirección
         </h3>
         <p className="text-base md:text-lg text-muted italic leading-relaxed">
-          Direccion
+          Santo Domingo
           <br />
-          Localidad
+          Republica Dominicana 
         </p>
       </div>
 

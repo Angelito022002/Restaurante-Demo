@@ -19,7 +19,7 @@ export function ChefSection() {
         <div className="space-y-8 order-1 md:order-2">
 
           <span className="text-[10px] font-subtitle tracking-[0.5em] text-primary uppercase">
-            CONOCE AL CHEF
+            CONOCE LA EXPERIENCIA
           </span>
 
           <h2 className="text-4xl md:text-5xl font-headline leading-tight text-primary">
@@ -27,8 +27,7 @@ export function ChefSection() {
           </h2>
 
           <p className="text-muted text-lg font-light leading-relaxed italic border-l-2 border-primary/20 pl-6">
-            "Cada plato en Casa Luca nace del equilibrio entre técnica, sabor y presentación.
-            Nuestra misión es convertir cada visita en una experiencia gastronómica memorable."
+            "Cada plato está pensado para ofrecer una experiencia visual, sensorial y memorable en cada visita."
           </p>
 
           {/* BLOQUES */}

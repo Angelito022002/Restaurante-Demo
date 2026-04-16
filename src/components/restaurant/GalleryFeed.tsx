@@ -18,7 +18,7 @@ export function GalleryFeed() {
         </span>
 
         <h2 className="text-3xl md:text-4xl font-headline tracking-tight text-primary italic">
-          @casaluca.rd
+          @auradining
         </h2>
 
         <p className="text-sm text-muted italic mt-4 max-w-xl mx-auto">
@@ -52,7 +52,7 @@ export function GalleryFeed() {
       {/* BOTÓN */}
       <div className="text-center mt-12">
         <a
-          href="https://www.instagram.com/casaluca.rd/"
+          href="https://www.instagram.com/"
           target="_blank"
           rel="noreferrer"
           className="inline-block border border-primary/40 px-8 py-3 hover:bg-primary hover:text-background transition-all text-[10px] md:text-xs font-subtitle tracking-[0.25em] uppercase text-primary"

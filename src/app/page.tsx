@@ -14,7 +14,7 @@ export default function Home() {
       {/* Branding Header - Now outside the navigation panel */}
       <header className="w-full pt-24 pb-12 bg-background flex flex-col items-center">
        <h1 className="text-4xl sm:text-5xl md:text-8xl font-headline tracking-[0.18em] sm:tracking-[0.24em] md:tracking-[0.3em] text-primary text-center">
-  CASA LUCA
+  RESTAURANTE
 </h1>
         <div className="gold-divider max-w-md mt-8" />
        <p className="text-[12px] font-subtitle tracking-[0.2em] text-primary/80 mt-4 uppercase text-center">

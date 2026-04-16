@@ -10,9 +10,9 @@ import { MenuRecommendations } from "@/components/restaurant/MenuRecommendations
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background selection:bg-primary/30 selection:text-primary">
+    <main className="min-h-screen bg-[#12382F] selection:bg-primary/30 selection:text-primary">
       {/* Branding Header - Now outside the navigation panel */}
-      <header className="w-full pt-24 pb-12 bg-background flex flex-col items-center">
+     <header className="w-full pt-24 pb-12 bg-[#12382F] flex flex-col items-center">
        <h1 className="text-4xl sm:text-5xl md:text-8xl font-headline tracking-[0.18em] sm:tracking-[0.24em] md:tracking-[0.3em] text-primary text-center">
   AURA DINING
 </h1>
@@ -24,7 +24,7 @@ export default function Home() {
       </header>
 
       {/* Navigation & Guest Services */}
-     <nav className="sticky top-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-primary/10 px-4 md:px-8 py-4 md:py-6 flex flex-col md:flex-row justify-center items-center gap-4 md:gap-16">
+     <nav className="sticky top-0 w-full z-50 bg-[#12382F]/90 backdrop-blur-md border-b border-primary/10 px-4 md:px-8 py-4 md:py-6 flex flex-col md:flex-row justify-center items-center gap-4 md:gap-16">
   <div className="flex flex-wrap justify-center gap-4 md:gap-12 text-[9px] md:text-[10px] font-subtitle tracking-[0.2em] md:tracking-[0.3em] uppercase opacity-70 text-center">
     <span className="cursor-pointer hover:text-primary transition-colors">HOME</span>
     <span className="cursor-pointer hover:text-primary transition-colors">ABOUT</span>
@@ -78,7 +78,7 @@ export default function Home() {
       {/* Social / Gallery */}
       <GalleryFeed />
  {/* Footer */}
-    <footer className="py-16 md:py-24 border-t border-primary/10 bg-background">
+    <footer className="py-16 md:py-24 border-t border-primary/10 bg-[#12382F]">
   <div className="max-w-7xl mx-auto px-4 md:px-6 text-center">
 
     <h2 className="text-4xl md:text-5xl font-headline text-primary tracking-[0.12em]">

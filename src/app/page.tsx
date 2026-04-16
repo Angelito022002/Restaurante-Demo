@@ -14,7 +14,7 @@ export default function Home() {
       {/* Branding Header - Now outside the navigation panel */}
       <header className="w-full pt-24 pb-12 bg-background flex flex-col items-center">
        <h1 className="text-4xl sm:text-5xl md:text-8xl font-headline tracking-[0.18em] sm:tracking-[0.24em] md:tracking-[0.3em] text-primary text-center">
-  RESTAURANTE
+  AURA DINING
 </h1>
         <div className="gold-divider max-w-md mt-8" />
        <p className="text-[12px] font-subtitle tracking-[0.2em] text-primary/80 mt-4 uppercase text-center">
@@ -37,7 +37,7 @@ export default function Home() {
 
   <div className="flex flex-col items-center w-full md:w-auto">
     <a
-      href="https://wa.me/18293424146?text=Hola,%20quiero%20reservar%20en%20Casa%20Luca"
+      href="https://wa.me/18293424146?text=Hola,%20quiero%20reservar%20en%20Aura%20Dining"
       target="_blank"
       rel="noreferrer"
       className="w-full md:w-auto flex justify-center"
@@ -82,11 +82,11 @@ export default function Home() {
   <div className="max-w-7xl mx-auto px-4 md:px-6 text-center">
 
     <h2 className="text-4xl md:text-5xl font-headline text-primary tracking-[0.12em]">
-      CASA LUCA
+      Aura Dining Group
     </h2>
 
     <p className="text-[10px] md:text-xs font-subtitle tracking-[0.35em] uppercase text-primary/60 mt-4">
-      Fine Dining · Santo Domingo
+      Fine Dining
     </p>
 
     <div className="gold-divider max-w-md mx-auto mt-8 mb-12" />
@@ -97,9 +97,9 @@ export default function Home() {
           Dirección
         </h3>
         <p className="text-base md:text-lg text-muted italic leading-relaxed">
-          Calle Paseo de los Locutores
+          Direccion
           <br />
-          Sector Piantini, Santo Domingo
+          Localidad
         </p>
       </div>
 
@@ -121,11 +121,11 @@ export default function Home() {
         <p className="text-base md:text-lg text-muted italic leading-relaxed">
           +1 829 342 4146
           <br />
-          CasaLuca@gmail.com
+         reservas@auradining.com
         </p>
 
         <a
-          href="https://wa.me/18293424146?text=Hola,%20quiero%20reservar%20en%20Casa%20Luca"
+          href="https://wa.me/18293424146?text=Hola,%20quiero%20reservar%20en%20Aura%20Dining"
           target="_blank"
           rel="noreferrer"
           className="inline-block mt-4 border border-primary/40 px-6 py-3 text-[10px] md:text-xs font-subtitle tracking-[0.25em] uppercase text-primary hover:bg-primary hover:text-background transition-all"
@@ -137,7 +137,7 @@ export default function Home() {
 
     <div className="mt-14 md:mt-16 pt-6 border-t border-primary/10">
       <p className="text-[10px] md:text-xs font-subtitle tracking-[0.3em] uppercase text-primary/40">
-        © 2025 Casa Luca Fine Dining Group
+        © 2025 Aura Dining Group
       </p>
     </div>
   </div>

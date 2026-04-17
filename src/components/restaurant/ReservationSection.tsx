@@ -21,7 +21,7 @@ export function ReservationSection() {
     // limpiar error si todo está bien
     setError("");
 
-    const message = `Hola, quiero hacer una reserva en Casa Luca.
+    const message = `Hola, quiero hacer una reserva en Aura Dining.
 
 Nombre: ${name}
 Cantidad de personas: ${guests}

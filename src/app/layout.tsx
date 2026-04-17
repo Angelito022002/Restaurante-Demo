@@ -3,7 +3,7 @@ import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata = {
-  title: "AURA DINING | Reserva fácil por WhatsApp"
+  title: "AURA DINING | Reserva fácil por WhatsApp",
   description: "Experiencia gastronómica exclusiva",
 };
 

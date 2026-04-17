@@ -6,7 +6,7 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const CATEGORIES = [
   { id: "appetizers", title: "ENTRADAS", img: "https://i.imgur.com/ZCGGJrj.jpeg" },
-  { id: "mains", title: "PLATOS FUERTES", img: "https://i.imgur.com/xeojJPQ.jpeg" },
+  { id: "mains", title: "PLATOS FUERTES", img: "https://i.imgur.com/T0n6BfC.png" },
   { id: "desserts", title: "POSTRES", img: "https://i.imgur.com/JzjaYdT.jpeg" },
 ];
 

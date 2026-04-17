@@ -5,7 +5,7 @@ const MENU_SECTIONS = [
     title: "ENTRADAS",
     image: "https://i.imgur.com/ZCGGJrj.jpeg",
     items: [
-      { name: "Casa Luca cheese bread", price: "RD$345" },
+      { name: "Cheese bread", price: "RD$345" },
       { name: "Aceitunas Crujientes", price: "RD$425" },
       { name: "Jamón ibérico Joselito", price: "RD$3,500" },
       { name: "Croquetas de Fuet", price: "RD$425" },
@@ -111,7 +111,7 @@ const MENU_SECTIONS = [
     title: "POSTRES",
     image: "https://i.imgur.com/JzjaYdT.jpeg",
     items: [
-      { name: "Casa Luca chocolate cake", price: "RD$900" },
+      { name: "Chocolate cake", price: "RD$900" },
       { name: "Guava bread pudding", price: "RD$575" },
       { name: "Crema de almendras", desc: "Pistacho tostado y agua de rosas", price: "RD$575" },
       { name: "Tiramisú de churros", price: "RD$550" },
@@ -130,7 +130,7 @@ const featuredSections = [
   },
   {
     title: "CARNES",
-    image: "https://i.imgur.com/xeojJPQ.jpeg",
+    image: "https://i.imgur.com/G5cEEfP.png",
     sideTitle: "CARNES",
     items: MENU_SECTIONS[7].items.slice(0, 4),
     reversed: true,

@@ -85,7 +85,7 @@ const MENU_SECTIONS = [
   },
   {
     title: "CARNES",
-    image: "https://i.imgur.com/xeojJPQ.jpeg",
+    image: "https://i.imgur.com/G5cEEfP.png",
     items: [
       { name: "707 Steak", desc: "24 oz. wet aged Linz rib eye au jus (to share)", price: "RD$4,200" },
       { name: "Entrecote Café de París", desc: "NY striploin con salsa de hierbas y papas fritas", price: "RD$1,950" },

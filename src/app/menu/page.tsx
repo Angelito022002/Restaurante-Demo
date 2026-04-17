@@ -281,7 +281,7 @@ export default function MenuPage() {
 
         <div className="text-center mt-16 md:mt-20">
           <a
-            href="https://wa.me/18293424146?text=Hola,%20quiero%20reservar%20en%20Casa%20Luca"
+            href="https://wa.me/18293424146?text=Hola,%20quiero%20reservar%20en%20Aura%20Dining"
             target="_blank"
             rel="noreferrer"
             className="inline-block border border-[#C5A059] text-[#C5A059] px-8 py-4 uppercase tracking-[0.2em] hover:bg-[#C5A059] hover:text-[#0B1C16] transition"

@@ -6,7 +6,7 @@ import Image from "next/image";
 const SPECIALS = [
   { id: 1, name: "Pulpo Yakitori", price: "RD$1,400", img: "https://i.imgur.com/a7mck02.jpeg" },
   { id: 2, name: "Carpaccio de Pescado Blanco", price: "RD$695", img: "https://i.imgur.com/CTPZOWG.jpeg" },
-  { id: 3, name: "Casa Luca chocolate cake", price: "RD$900", img: "https://i.imgur.com/CDq4c0H.jpeg" },
+  { id: 3, name: "Chocolate cake", price: "RD$900", img: "https://i.imgur.com/CDq4c0H.jpeg" },
 ];
 
 export function SpecialDishes() {

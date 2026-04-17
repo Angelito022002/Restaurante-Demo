@@ -34,7 +34,7 @@ export function StorySection() {
      <div className="relative h-[420px] sm:h-[460px] md:h-[600px] flex items-center justify-center">
   <div className="arched-portal relative w-full max-w-[520px] h-[360px] sm:h-[400px] md:h-[500px] z-10 gold-glow overflow-hidden">
             <Image
-              src="https://imgur.com/v3px915"
+              src="https://i.imgur.com/v3px915.png"
               alt="Interior del restaurante"
               fill
               className="object-cover"

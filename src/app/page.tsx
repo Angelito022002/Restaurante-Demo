@@ -10,7 +10,7 @@ import { MenuRecommendations } from "@/components/restaurant/MenuRecommendations
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#12382F] selection:bg-primary/30 selection:text-primary">
+    <main className="min-h-screen bg-gradient-to-b from-[#12382F] to-[#0B1C16] selection:bg-primary/30 selection:text-primary">
       {/* Branding Header - Now outside the navigation panel */}
      <header className="w-full pt-24 pb-12 bg-[#12382F] flex flex-col items-center">
        <h1 className="text-4xl sm:text-5xl md:text-8xl font-headline tracking-[0.18em] sm:tracking-[0.24em] md:tracking-[0.3em] text-primary text-center">

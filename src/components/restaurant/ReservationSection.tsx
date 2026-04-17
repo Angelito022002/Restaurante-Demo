@@ -48,7 +48,7 @@ Teléfono: ${phone}`;
           </h2>
 
           <p className="text-muted italic text-lg max-w-2xl mx-auto mb-10">
-            Vive una experiencia inolvidable en Casa Luca. Completa tus datos y envía tu solicitud por WhatsApp.
+            Vive una experiencia inolvidable en Aura Dining. Completa tus datos y envía tu solicitud por WhatsApp.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">

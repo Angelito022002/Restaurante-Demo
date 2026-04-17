@@ -2,9 +2,9 @@
 import type {Metadata} from 'next';
 import './globals.css';
 
-export const metadata: Metadata = {
-  title: 'CASA LUCA | Luxury Learning',
-  description: 'Sophisticated education dashboard for high-performing students.',
+export const metadata = {
+  title: "AURA DINING | Reserva fácil por WhatsApp"
+  description: "Experiencia gastronómica exclusiva",
 };
 
 export default function RootLayout({

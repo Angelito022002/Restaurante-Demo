@@ -1,15 +1,5 @@
 import Link from "next/link";
 
-const FALLBACK_IMAGES = {
-  CRUDOS: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80",
-  SOPAS: "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=80",
-  PESCADOS: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=1200&q=80",
-  ACOMPAÑANTES: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=80",
-  ENSALADAS: "https://images.unsplash.com/photo-1546793665-c74683f339c1?auto=format&fit=crop&w=1200&q=80",
-  PASTAS: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=1200&q=80",
-  ARROCES: "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=1200&q=80",
-};
-
 const MENU_SECTIONS = [
   {
     title: "ENTRADAS",
@@ -25,7 +15,7 @@ const MENU_SECTIONS = [
   },
   {
     title: "CRUDOS",
-    image: FALLBACK_IMAGES.CRUDOS,
+    image: "https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=1200&q=80",
     items: [
       { name: "Pegao al Plato con Hongos Silvestres", price: "RD$765" },
       { name: "Vitello tonnato", price: "RD$750" },
@@ -46,7 +36,7 @@ const MENU_SECTIONS = [
   },
   {
     title: "SOPAS",
-    image: FALLBACK_IMAGES.SOPAS,
+    image: "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=80",
     items: [
       { name: "Tortelini in Brodo", price: "RD$625" },
       { name: "Sopa de Pescadores", price: "RD$925" },
@@ -54,7 +44,7 @@ const MENU_SECTIONS = [
   },
   {
     title: "PESCADOS",
-    image: FALLBACK_IMAGES.PESCADOS,
+    image: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=1200&q=80",
     items: [
       { name: "Chillo Santorini", desc: "Envuelto en papillote con hongos y limón", price: "RD$1,750" },
       { name: "Lubina Bocuse", desc: "Lubina al grill con puré de puerro y tomates", price: "RD$2,500" },
@@ -65,7 +55,7 @@ const MENU_SECTIONS = [
   },
   {
     title: "ACOMPAÑANTES",
-    image: FALLBACK_IMAGES.ACOMPAÑANTES,
+    image: "https://images.unsplash.com/photo-1543332164-6e82f355badc?auto=format&fit=crop&w=1200&q=80",
     items: [
       { name: "Grilled corn salad", price: "RD$325" },
       { name: "Mouselline de yuca robouchon", price: "RD$325" },
@@ -78,7 +68,7 @@ const MENU_SECTIONS = [
   },
   {
     title: "ENSALADAS",
-    image: FALLBACK_IMAGES.ENSALADAS,
+    image: "https://images.unsplash.com/photo-1546793665-c74683f339c1?auto=format&fit=crop&w=1200&q=80",
     items: [
       { name: "Miso Caesar salad", price: "RD$675" },
       { name: "Caccio e Pepe salad", desc: "Lechuga romana, fonduta de pecorino, parmesano y pimienta fresca", price: "RD$675" },
@@ -87,7 +77,7 @@ const MENU_SECTIONS = [
   },
   {
     title: "PASTAS",
-    image: FALLBACK_IMAGES.PASTAS,
+    image: "https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?auto=format&fit=crop&w=1200&q=80",
     items: [
       { name: "Crostata Malfatta", desc: "Fetuccini de espinaca hecho en casa, canasta de parmesano", price: "RD$725" },
       { name: "Classic Carbonara", price: "RD$725" },
@@ -117,7 +107,7 @@ const MENU_SECTIONS = [
   },
   {
     title: "ARROCES",
-    image: FALLBACK_IMAGES.ARROCES,
+    image: "https://images.unsplash.com/photo-1512058564366-c9e3e046a2f7?auto=format&fit=crop&w=1200&q=80",
     items: [
       { name: "Rosejat", desc: "Fideos con fumet de crustáceos, sepias, calamares y camarón", price: "RD$925" },
       { name: "Arroz negro", desc: "Con pulpo tostado, camarones y chips de ajo", price: "RD$1,350" },
@@ -160,24 +150,22 @@ export default function MenuPage() {
           <div className="w-20 h-px bg-[#C5A059]/40 mx-auto mt-6" />
         </div>
 
-        <div className="space-y-10 md:space-y-16 mb-20 md:mb-24">
+        <div className="space-y-10 sm:space-y-12 md:space-y-20">
           {MENU_SECTIONS.map((section, index) => {
             const reversed = index % 2 !== 0;
 
             return (
               <section
                 key={index}
-                className="bg-[#103128] border border-[#C5A059]/15 p-4 sm:p-5 md:p-8"
+                className="bg-[#103128] border border-[#C5A059]/15 p-4 sm:p-5 md:p-10"
               >
-                <div className="grid grid-cols-[44%_56%] md:grid-cols-[42%_58%] lg:grid-cols-12 gap-4 sm:gap-5 md:gap-8 items-start">
+                <div className="grid grid-cols-1 md:grid-cols-12 gap-5 sm:gap-6 md:gap-10 items-start md:items-center">
                   <div
-                    className={`${
-                      reversed
-                        ? "lg:col-span-5 lg:order-2"
-                        : "lg:col-span-5 lg:order-1"
+                    className={`md:col-span-5 ${
+                      reversed ? "md:order-2" : "md:order-1"
                     }`}
                   >
-                    <div className="relative overflow-hidden rounded-t-[72px] sm:rounded-t-[88px] md:rounded-t-[120px] border border-[#C5A059]/20 h-[190px] sm:h-[240px] md:h-[320px] lg:h-[420px]">
+                    <div className="relative overflow-hidden rounded-t-[68px] sm:rounded-t-[90px] md:rounded-t-[120px] border border-[#C5A059]/20 h-[220px] sm:h-[280px] md:h-[460px]">
                       <img
                         src={section.image}
                         alt={section.title}
@@ -187,10 +175,8 @@ export default function MenuPage() {
                   </div>
 
                   <div
-                    className={`${
-                      reversed
-                        ? "lg:col-span-7 lg:order-1"
-                        : "lg:col-span-7 lg:order-2"
+                    className={`md:col-span-7 ${
+                      reversed ? "md:order-1" : "md:order-2"
                     }`}
                   >
                     <div className="flex items-start gap-3 sm:gap-4 md:gap-8">
@@ -200,28 +186,28 @@ export default function MenuPage() {
                         </span>
                       </div>
 
-                      <div className="flex-1 min-w-0 pt-1 pr-3 sm:pr-4 md:pr-6">
-                        <h2 className="text-[22px] sm:text-[30px] md:text-4xl font-serif text-[#E8E0D0] mb-4 sm:mb-5 md:mb-8 leading-none sm:leading-tight">
+                      <div className="flex-1 min-w-0 pt-1 pr-1 sm:pr-2 md:pr-8">
+                        <h2 className="text-[22px] sm:text-[28px] md:text-4xl font-serif text-[#E8E0D0] mb-4 sm:mb-5 md:mb-8 leading-none sm:leading-tight">
                           {section.title}
                         </h2>
 
                         <div className="space-y-3 sm:space-y-4 md:space-y-5">
                           {section.items.map((item, i) => (
                             <div key={i}>
-                              <div className="flex items-baseline gap-3 sm:gap-4">
-                                <h3 className="text-[11px] sm:text-[15px] md:text-lg font-semibold text-white leading-snug min-w-0">
+                              <div className="flex items-baseline gap-2 sm:gap-3 md:gap-4">
+                                <h3 className="text-[13px] sm:text-[16px] md:text-lg font-semibold text-white leading-snug min-w-0">
                                   {item.name}
                                 </h3>
 
-                                <div className="flex-1 border-b border-[#C5A059]/30 min-w-[16px] sm:min-w-[28px]" />
+                                <div className="flex-1 border-b border-[#C5A059]/30 min-w-[10px] sm:min-w-[20px] md:min-w-[24px]" />
 
-                                <span className="text-[#C5A059] text-[11px] sm:text-[15px] md:text-base whitespace-nowrap">
+                                <span className="text-[#C5A059] text-[13px] sm:text-[15px] md:text-base whitespace-nowrap pr-[2px]">
                                   {item.price}
                                 </span>
                               </div>
 
                               {item.desc && (
-                                <p className="text-[10px] sm:text-[12px] md:text-sm text-[#C9C9C9] mt-1.5 sm:mt-2 italic leading-relaxed max-w-[95%]">
+                                <p className="text-[11px] sm:text-[12px] md:text-sm text-[#C9C9C9] mt-1.5 sm:mt-2 italic leading-relaxed max-w-[96%] md:max-w-[92%]">
                                   {item.desc}
                                 </p>
                               )}

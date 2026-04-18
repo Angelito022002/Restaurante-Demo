@@ -1,5 +1,15 @@
 import Link from "next/link";
 
+const FALLBACK_IMAGES = {
+  CRUDOS: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80",
+  SOPAS: "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=80",
+  PESCADOS: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=1200&q=80",
+  ACOMPAÑANTES: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=80",
+  ENSALADAS: "https://images.unsplash.com/photo-1546793665-c74683f339c1?auto=format&fit=crop&w=1200&q=80",
+  PASTAS: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=1200&q=80",
+  ARROCES: "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=1200&q=80",
+};
+
 const MENU_SECTIONS = [
   {
     title: "ENTRADAS",
@@ -15,6 +25,7 @@ const MENU_SECTIONS = [
   },
   {
     title: "CRUDOS",
+    image: FALLBACK_IMAGES.CRUDOS,
     items: [
       { name: "Pegao al Plato con Hongos Silvestres", price: "RD$765" },
       { name: "Vitello tonnato", price: "RD$750" },
@@ -35,6 +46,7 @@ const MENU_SECTIONS = [
   },
   {
     title: "SOPAS",
+    image: FALLBACK_IMAGES.SOPAS,
     items: [
       { name: "Tortelini in Brodo", price: "RD$625" },
       { name: "Sopa de Pescadores", price: "RD$925" },
@@ -42,6 +54,7 @@ const MENU_SECTIONS = [
   },
   {
     title: "PESCADOS",
+    image: FALLBACK_IMAGES.PESCADOS,
     items: [
       { name: "Chillo Santorini", desc: "Envuelto en papillote con hongos y limón", price: "RD$1,750" },
       { name: "Lubina Bocuse", desc: "Lubina al grill con puré de puerro y tomates", price: "RD$2,500" },
@@ -52,6 +65,7 @@ const MENU_SECTIONS = [
   },
   {
     title: "ACOMPAÑANTES",
+    image: FALLBACK_IMAGES.ACOMPAÑANTES,
     items: [
       { name: "Grilled corn salad", price: "RD$325" },
       { name: "Mouselline de yuca robouchon", price: "RD$325" },
@@ -64,6 +78,7 @@ const MENU_SECTIONS = [
   },
   {
     title: "ENSALADAS",
+    image: FALLBACK_IMAGES.ENSALADAS,
     items: [
       { name: "Miso Caesar salad", price: "RD$675" },
       { name: "Caccio e Pepe salad", desc: "Lechuga romana, fonduta de pecorino, parmesano y pimienta fresca", price: "RD$675" },
@@ -72,6 +87,7 @@ const MENU_SECTIONS = [
   },
   {
     title: "PASTAS",
+    image: FALLBACK_IMAGES.PASTAS,
     items: [
       { name: "Crostata Malfatta", desc: "Fetuccini de espinaca hecho en casa, canasta de parmesano", price: "RD$725" },
       { name: "Classic Carbonara", price: "RD$725" },
@@ -101,6 +117,7 @@ const MENU_SECTIONS = [
   },
   {
     title: "ARROCES",
+    image: FALLBACK_IMAGES.ARROCES,
     items: [
       { name: "Rosejat", desc: "Fideos con fumet de crustáceos, sepias, calamares y camarón", price: "RD$925" },
       { name: "Arroz negro", desc: "Con pulpo tostado, camarones y chips de ajo", price: "RD$1,350" },
@@ -117,30 +134,6 @@ const MENU_SECTIONS = [
       { name: "Tiramisú de churros", price: "RD$550" },
       { name: "Sorbetes de frutas", price: "RD$625" },
     ],
-  },
-];
-
-const featuredSections = [
-  {
-    title: "ENTRADAS",
-    image: "https://i.imgur.com/ZCGGJrj.jpeg",
-    sideTitle: "ENTRADAS",
-    items: MENU_SECTIONS[0].items.slice(0, 4),
-    reversed: false,
-  },
-  {
-    title: "CARNES",
-    image: "https://i.imgur.com/G5cEEfP.png",
-    sideTitle: "CARNES",
-    items: MENU_SECTIONS[7].items.slice(0, 4),
-    reversed: true,
-  },
-  {
-    title: "POSTRES",
-    image: "https://i.imgur.com/JzjaYdT.jpeg",
-    sideTitle: "POSTRES",
-    items: MENU_SECTIONS[9].items.slice(0, 4),
-    reversed: false,
   },
 ];
 
@@ -167,116 +160,81 @@ export default function MenuPage() {
           <div className="w-20 h-px bg-[#C5A059]/40 mx-auto mt-6" />
         </div>
 
-        {/* BLOQUES EDITORIALES */}
         <div className="space-y-10 md:space-y-16 mb-20 md:mb-24">
-          {featuredSections.map((section, index) => (
-            <section
-              key={index}
-              className="bg-[#103128] border border-[#C5A059]/15 p-4 sm:p-5 md:p-8"
-            >
-              <div className="grid grid-cols-[44%_56%] md:grid-cols-[42%_58%] lg:grid-cols-12 gap-4 sm:gap-5 md:gap-8 items-start">
-                <div
-                  className={`${
-                    section.reversed
-                      ? "lg:col-span-5 lg:order-2"
-                      : "lg:col-span-5 lg:order-1"
-                  }`}
-                >
-                  <div className="relative overflow-hidden rounded-t-[72px] sm:rounded-t-[88px] md:rounded-t-[120px] border border-[#C5A059]/20 h-[180px] xs:h-[200px] sm:h-[240px] md:h-[320px] lg:h-[420px]">
-                    <img
-                      src={section.image}
-                      alt={section.title}
-                      className="w-full h-full object-cover"
-                    />
+          {MENU_SECTIONS.map((section, index) => {
+            const reversed = index % 2 !== 0;
+
+            return (
+              <section
+                key={index}
+                className="bg-[#103128] border border-[#C5A059]/15 p-4 sm:p-5 md:p-8"
+              >
+                <div className="grid grid-cols-[44%_56%] md:grid-cols-[42%_58%] lg:grid-cols-12 gap-4 sm:gap-5 md:gap-8 items-start">
+                  <div
+                    className={`${
+                      reversed
+                        ? "lg:col-span-5 lg:order-2"
+                        : "lg:col-span-5 lg:order-1"
+                    }`}
+                  >
+                    <div className="relative overflow-hidden rounded-t-[72px] sm:rounded-t-[88px] md:rounded-t-[120px] border border-[#C5A059]/20 h-[190px] sm:h-[240px] md:h-[320px] lg:h-[420px]">
+                      <img
+                        src={section.image}
+                        alt={section.title}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+
+                  <div
+                    className={`${
+                      reversed
+                        ? "lg:col-span-7 lg:order-1"
+                        : "lg:col-span-7 lg:order-2"
+                    }`}
+                  >
+                    <div className="flex items-start gap-3 sm:gap-4 md:gap-8">
+                      <div className="flex items-start justify-center min-w-[28px] sm:min-w-[34px] md:min-w-[70px]">
+                        <span className="text-[#C5A059] text-[30px] sm:text-[38px] md:text-5xl lg:text-6xl font-serif [writing-mode:vertical-rl] rotate-180 tracking-tight md:tracking-wide opacity-90 leading-none">
+                          {section.title}
+                        </span>
+                      </div>
+
+                      <div className="flex-1 min-w-0 pt-1 pr-3 sm:pr-4 md:pr-6">
+                        <h2 className="text-[22px] sm:text-[30px] md:text-4xl font-serif text-[#E8E0D0] mb-4 sm:mb-5 md:mb-8 leading-none sm:leading-tight">
+                          {section.title}
+                        </h2>
+
+                        <div className="space-y-3 sm:space-y-4 md:space-y-5">
+                          {section.items.map((item, i) => (
+                            <div key={i}>
+                              <div className="flex items-baseline gap-3 sm:gap-4">
+                                <h3 className="text-[11px] sm:text-[15px] md:text-lg font-semibold text-white leading-snug min-w-0">
+                                  {item.name}
+                                </h3>
+
+                                <div className="flex-1 border-b border-[#C5A059]/30 min-w-[16px] sm:min-w-[28px]" />
+
+                                <span className="text-[#C5A059] text-[11px] sm:text-[15px] md:text-base whitespace-nowrap">
+                                  {item.price}
+                                </span>
+                              </div>
+
+                              {item.desc && (
+                                <p className="text-[10px] sm:text-[12px] md:text-sm text-[#C9C9C9] mt-1.5 sm:mt-2 italic leading-relaxed max-w-[95%]">
+                                  {item.desc}
+                                </p>
+                              )}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-
-                <div
-                  className={`${
-                    section.reversed
-                      ? "lg:col-span-7 lg:order-1"
-                      : "lg:col-span-7 lg:order-2"
-                  }`}
-                >
-                  <div className="flex items-start gap-3 sm:gap-4 md:gap-8">
-                    <div className="flex items-start justify-center min-w-[28px] sm:min-w-[34px] md:min-w-[70px]">
-                      <span className="text-[#C5A059] text-[30px] sm:text-[38px] md:text-5xl lg:text-6xl font-serif [writing-mode:vertical-rl] rotate-180 tracking-tight md:tracking-wide opacity-90 leading-none">
-                        {section.sideTitle}
-                      </span>
-                    </div>
-
-                  <div className="flex-1 min-w-0 pt-1 pr-3 sm:pr-4 md:pr-6">
-  <h2 className="text-[22px] sm:text-[30px] md:text-4xl font-serif text-[#E8E0D0] mb-4 sm:mb-5 md:mb-8 leading-none sm:leading-tight">
-    {section.title}
-  </h2>
-
-  <div className="space-y-3 sm:space-y-4 md:space-y-5">
-    {section.items.map((item, i) => (
-      <div key={i}>
-        <div className="flex items-baseline gap-3 sm:gap-4">
-          <h3 className="text-[11px] sm:text-[15px] md:text-lg font-semibold text-white leading-snug min-w-0">
-            {item.name}
-          </h3>
-
-          <div className="flex-1 border-b border-[#C5A059]/30 min-w-[16px] sm:min-w-[28px]" />
-
-          <span className="text-[#C5A059] text-[11px] sm:text-[15px] md:text-base whitespace-nowrap">
-            {item.price}
-          </span>
-        </div>
-
-        {item.desc && (
-          <p className="text-[10px] sm:text-[12px] md:text-sm text-[#C9C9C9] mt-1.5 sm:mt-2 italic leading-relaxed max-w-[95%]">
-            {item.desc}
-          </p>
-        )}
-      </div>
-    ))}
-  </div>
-</div>
-                  </div>
-                </div>
-              </div>
-            </section>
-          ))}
-        </div>
-
-        {/* MENÚ COMPLETO */}
-        <div className="space-y-8 md:space-y-10">
-          {MENU_SECTIONS.map((section, index) => (
-            <section
-              key={index}
-              className="border border-[#C5A059]/20 bg-[#0F261E] p-5 sm:p-6 md:p-8 rounded-t-[40px] md:rounded-t-[70px]"
-            >
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-[#C5A059] mb-8 tracking-wide">
-                {section.title}
-              </h2>
-
-              <div className="space-y-6">
-                {section.items.map((item, i) => (
-                  <div key={i}>
-                    <div className="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-4">
-                      <h3 className="text-lg md:text-xl text-white leading-snug">
-                        {item.name}
-                      </h3>
-
-                      <div className="hidden sm:block flex-1 border-b border-dashed border-[#C5A059]/30" />
-
-                      <span className="text-[#C5A059] whitespace-nowrap">
-                        {item.price}
-                      </span>
-                    </div>
-
-                    {item.desc && (
-                      <p className="text-sm text-[#BDBDBD] mt-2 italic leading-relaxed">
-                        {item.desc}
-                      </p>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </section>
-          ))}
+              </section>
+            );
+          })}
         </div>
 
         <div className="text-center mt-16 md:mt-20">

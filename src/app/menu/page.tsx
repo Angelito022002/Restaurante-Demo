@@ -15,7 +15,7 @@ const MENU_SECTIONS = [
   },
   {
     title: "CRUDOS",
-    image: "https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1673663095536-4d8a5a1fb930?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     items: [
       { name: "Pegao al Plato con Hongos Silvestres", price: "RD$765" },
       { name: "Vitello tonnato", price: "RD$750" },
@@ -55,7 +55,7 @@ const MENU_SECTIONS = [
   },
   {
     title: "ACOMPAÑANTES",
-    image: "https://images.unsplash.com/photo-1543332164-6e82f355badc?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1775229909605-e683a47f979f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     items: [
       { name: "Grilled corn salad", price: "RD$325" },
       { name: "Mouselline de yuca robouchon", price: "RD$325" },
@@ -77,7 +77,7 @@ const MENU_SECTIONS = [
   },
   {
     title: "PASTAS",
-    image: "https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     items: [
       { name: "Crostata Malfatta", desc: "Fetuccini de espinaca hecho en casa, canasta de parmesano", price: "RD$725" },
       { name: "Classic Carbonara", price: "RD$725" },
@@ -107,7 +107,7 @@ const MENU_SECTIONS = [
   },
   {
     title: "ARROCES",
-    image: "https://images.unsplash.com/photo-1512058564366-c9e3e046a2f7?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1516684732162-798a0062be99?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     items: [
       { name: "Rosejat", desc: "Fideos con fumet de crustáceos, sepias, calamares y camarón", price: "RD$925" },
       { name: "Arroz negro", desc: "Con pulpo tostado, camarones y chips de ajo", price: "RD$1,350" },
